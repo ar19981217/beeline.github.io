@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body style="background: #282828;">
+<div class="main">
+    <div class="chat-title">Чат-бот</div>
+    <div class="chat-wrapper">
+
+        <div class="wrapper-messages">
+            <div id="messages">
+            </div>
+        </div>
+        <form>
+            <div class="d-flex send-control">
+                <div class="icn-count">
+                    <div>+</div>
+                    <div>-</div>
+                    <div>*</div>
+                    <div>/</div>
+                </div>
+                <textarea type="text" oninput="chat.valid(this.value, chat.btn)"></textarea>
+                <button class="form-btn" type="button" onclick="chat.chatBotCommands()">
+                    <svg class="svg" fill="red" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="30px" height="30px" viewBox="0 0 535.5 535.5"
+                         style="enable-background:new 0 0 535.5 535.5;" xml:space="preserve"
+                    ><g><g id="send">
+		<polygon points="0,497.25 535.5,267.75 0,38.25 0,216.75 382.5,267.75 0,318.75 		"/>
+	</g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+                        <g></g>
+</svg>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/chat.js"></script>
+</body>
+</html>
